@@ -1,0 +1,76 @@
+#include <iostream>
+#include <ctime>
+#include <cctype>
+using std::cout,std::endl,std::cin;
+
+char rps[3] = {'p','s','r'};
+char userChoice;
+char userDecision(){
+    char choice;
+    cout << "Enter r for Rock, p for Paper and s for Scissors or anything else to exit." << endl;
+    cin >> choice;
+    return tolower(choice);
+
+}
+
+int main(){
+    int random,run = 1;
+    while(run){
+        srand(time(0));
+        cout << "WELCOME TO ROCK,PAPER AND SCISSORS" << endl;
+        userChoice = userDecision();
+        random =  rand() % 3;
+        char computerChoice = rps[random];
+        if(computerChoice == userChoice){
+            cout << "DRAW!!!!" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+
+        else if(computerChoice == 'p' && userChoice == 'r'){
+            cout << "COMPUTER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+        else if(computerChoice == 'r' && userChoice == 'p'){
+            cout << "USER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+
+        else if(computerChoice == 'r' && userChoice == 's'){
+            cout << "COMPUTER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+        else if(computerChoice == 's' && userChoice == 'r'){
+            cout << "USER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+
+        else if(computerChoice == 's' && userChoice == 'p'){
+            cout << "COMPUTER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+        else if(computerChoice == 'p' && userChoice == 's'){
+            cout << "USER WINS" << endl;
+            cout << "You picked: " << userChoice << endl;
+            cout << "Computer picked: " << computerChoice << endl;
+            cout << endl;
+        }
+        else{
+            run = 0;
+        }
+
+
+
+    }
+}
