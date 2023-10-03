@@ -3,7 +3,7 @@
 #include <cctype>
 using std::cout,std::endl,std::cin;
 
-char rps[3] = {'p','s','r'};
+char rps[6] = {'p','s','r','p','s','r'};
 char userChoice;
 char userDecision(){
     char choice;
@@ -19,7 +19,7 @@ int main(){
         srand(time(0));
         cout << "WELCOME TO ROCK,PAPER AND SCISSORS" << endl;
         userChoice = userDecision();
-        random =  rand() % 3;
+        random =  rand() % 7;
         char computerChoice = rps[random];
         if(computerChoice == userChoice){
             cout << "DRAW!!!!" << endl;
