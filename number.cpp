@@ -2,7 +2,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <cctype>
-using std::cout,std::cin,std::endl;
+using std::cout;
+using std::cin;
+using std::endl;
 
 class Gamemode{
     public:
