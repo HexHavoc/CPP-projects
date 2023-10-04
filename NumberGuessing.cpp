@@ -61,7 +61,6 @@ void Gamemode::difficultyEasy(){
     int easyChoice,userChoice,chances = 3,effort=1;
     srand(time(0));
     easyChoice = 1 + (rand() % 10);
-    cout << easyChoice << endl;
     cout << "YOU HAVE SELECTED EASY MODE!!!!" << endl;
     cout << "In EASY MODE the number ranges from 1 to 10 and you have 3 chances to guess it." << endl;
     cout << "Enter your number:";
