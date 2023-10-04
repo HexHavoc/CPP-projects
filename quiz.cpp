@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ctime>
-#include <unistd.h>
 using std::cout;
 using std::endl;
 using std::cin;
